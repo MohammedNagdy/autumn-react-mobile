@@ -10,6 +10,7 @@ export const ExploreScreen = ({ navigation }) => {
             <Text>This is Explore page!</Text>
             <View style={styles.buttons}>
                 <Button title="Go Back Home" onPress={() => navigation.navigate("Home")}></Button>
+                <Button title="Product" onPress={() => navigation.navigate("Product")}></Button>
 
             </View>
         </View>

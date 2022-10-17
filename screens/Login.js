@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
-export const SignupScreen = ({ navigation }) => {
+export const LoginScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Text>This is Login page!</Text>

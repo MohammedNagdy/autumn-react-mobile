@@ -10,7 +10,7 @@ export const CheckoutScreen = ({ navigation }) => {
             <Text>This is Checkout page!</Text>
             <View style={styles.buttons}>
                 <Button title="Go Back" onPress={() => navigation.goBack()}></Button>
-                <Button title="Ceckout" ></Button>
+                <Button title="Checkout" ></Button>
             </View>
         </View>
     )

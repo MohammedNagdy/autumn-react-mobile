@@ -15,7 +15,7 @@ import { ProductScreen } from './screens/Product';
 import { CheckoutScreen } from './screens/Checkout';
 
 const Stack = createNativeStackNavigator()
-
+ 
 export default function App() {
   return (
     <NavigationContainer>
