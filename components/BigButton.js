@@ -1,24 +1,19 @@
 import * as React from 'react';
-import { StyleSheet, Button, View, Text, SafeAreaView } from 'react-native';
+import { StyleSheet, Button, View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-// import {useTailwind} from 'tailwind-rn';
 
-
-export const HomeScreen = ({ navigation }) => {
-
+export const BigButton = ({ navigation }) => {
     return (
-        <SafeAreaView >
-            <View className="flex-1 items-center justify-center bg-black">
+        <View style={styles.container}>
             <Text>This is Home page!</Text>
             <View style={styles.buttons}>
                 <Button title="Sign up Buyer" onPress={() => navigation.navigate("Signup")}></Button>
                 <Button title="Sign up Seller" onPress={() => navigation.navigate("SignupSeller")}></Button>
                 <Button title="Take me to app" onPress={() => navigation.navigate("Explore")}></Button>
             </View>
-            </View>
-        </SafeAreaView>
+        </View>
     )
 }
 
