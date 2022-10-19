@@ -4,14 +4,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
-export const BigButton = ({ navigation }) => {
+export const BigButton = ( bgColor="#fff", title) => {
     return (
-        <View style={styles.container}>
-            <Text>This is Home page!</Text>
+        <View style={[styles.container, {backgroundColor: bgColor}]}>
+            <Text style={styles.title}>{title}</Text>
             <View style={styles.buttons}>
-                <Button title="Sign up Buyer" onPress={() => navigation.navigate("Signup")}></Button>
-                <Button title="Sign up Seller" onPress={() => navigation.navigate("SignupSeller")}></Button>
-                <Button title="Take me to app" onPress={() => navigation.navigate("Explore")}></Button>
             </View>
         </View>
     )
@@ -20,12 +17,12 @@ export const BigButton = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
+      alignItems: 'flex-start',
+      justifyContent: 'left',
     },
-    buttons: {
+    title: {
         display: "flex",
-        flexDirection: "row"
+        flexDirection: "row",
+
     }
   });

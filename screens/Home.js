@@ -10,8 +10,8 @@ export const HomeScreen = ({ navigation }) => {
 
     return (
         <SafeAreaView >
-            <View className="flex-1 items-center justify-center bg-black">
-            <Text>This is Home page!</Text>
+            <View style={styles.container}>
+            <Text style={styles.headerText}>This is Home page!</Text>
             <View style={styles.buttons}>
                 <Button title="Sign up Buyer" onPress={() => navigation.navigate("Signup")}></Button>
                 <Button title="Sign up Seller" onPress={() => navigation.navigate("SignupSeller")}></Button>
@@ -25,9 +25,15 @@ export const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
+      backgroundColor: '#000000',
+      alignItems: 'left',
       justifyContent: 'center',
+    },
+    headerText: {
+        fontSize:24,
+        fontColor: "white",
+        fontWeight: 500
+
     },
     buttons: {
         display: "flex",

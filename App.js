@@ -21,6 +21,7 @@ const Stack = createNativeStackNavigator()
  
 export default function App() {
   return (
+    <TailwindProvider>
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Home" component={HomeScreen}/>
@@ -36,6 +37,7 @@ export default function App() {
 
         </Stack.Navigator>
       </NavigationContainer>
+      </TailwindProvider>
   );
 }
 
