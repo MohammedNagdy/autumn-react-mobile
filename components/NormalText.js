@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
-export const BoldTitle = ({text, color="#0000", fontsize=24, allcaps=false}) => {
+export const NormalText = ({text, color="#0000", fontsize=24, allcaps=false}) => {
     const textT = allcaps? "uppercase": "none";
 
     return (
@@ -16,6 +16,6 @@ export const BoldTitle = ({text, color="#0000", fontsize=24, allcaps=false}) => 
 
 const styles = StyleSheet.create({
     text: {
-      fontWeight: '700',
+      // Font Family Here...
     },
   });
